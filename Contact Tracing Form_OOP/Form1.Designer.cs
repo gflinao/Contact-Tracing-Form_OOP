@@ -382,6 +382,7 @@ namespace Contact_Tracing_Form_OOP
             this.pnl7.Name = "pnl7";
             this.pnl7.Size = new System.Drawing.Size(402, 92);
             this.pnl7.TabIndex = 38;
+            this.pnl7.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl7_Paint);
             // 
             // pnl8
             // 
@@ -392,6 +393,7 @@ namespace Contact_Tracing_Form_OOP
             this.pnl8.Name = "pnl8";
             this.pnl8.Size = new System.Drawing.Size(402, 107);
             this.pnl8.TabIndex = 39;
+            this.pnl8.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl8_Paint);
             // 
             // pnl9
             // 
@@ -404,6 +406,7 @@ namespace Contact_Tracing_Form_OOP
             this.pnl9.Name = "pnl9";
             this.pnl9.Size = new System.Drawing.Size(402, 116);
             this.pnl9.TabIndex = 40;
+            this.pnl9.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl9_Paint);
             // 
             // pnl6
             // 
@@ -415,6 +418,7 @@ namespace Contact_Tracing_Form_OOP
             this.pnl6.Name = "pnl6";
             this.pnl6.Size = new System.Drawing.Size(203, 104);
             this.pnl6.TabIndex = 41;
+            this.pnl6.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl6_Paint);
             // 
             // pnl1
             // 
@@ -434,6 +438,7 @@ namespace Contact_Tracing_Form_OOP
             this.pnl2.Name = "pnl2";
             this.pnl2.Size = new System.Drawing.Size(299, 55);
             this.pnl2.TabIndex = 43;
+            this.pnl2.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl2_Paint);
             // 
             // pnl3
             // 
@@ -443,6 +448,7 @@ namespace Contact_Tracing_Form_OOP
             this.pnl3.Name = "pnl3";
             this.pnl3.Size = new System.Drawing.Size(69, 55);
             this.pnl3.TabIndex = 44;
+            this.pnl3.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl3_Paint);
             // 
             // pnl4
             // 
@@ -452,6 +458,7 @@ namespace Contact_Tracing_Form_OOP
             this.pnl4.Name = "pnl4";
             this.pnl4.Size = new System.Drawing.Size(222, 57);
             this.pnl4.TabIndex = 45;
+            this.pnl4.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl4_Paint);
             // 
             // pnl5
             // 
@@ -461,6 +468,7 @@ namespace Contact_Tracing_Form_OOP
             this.pnl5.Name = "pnl5";
             this.pnl5.Size = new System.Drawing.Size(297, 60);
             this.pnl5.TabIndex = 46;
+            this.pnl5.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl5_Paint);
             // 
             // Form1
             // 

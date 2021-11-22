@@ -105,5 +105,45 @@ namespace Contact_Tracing_Form_OOP
         {
             pnl1.BackColor = Color.Transparent;
         }
+
+        private void pnl2_Paint(object sender, PaintEventArgs e)
+        {
+            pnl2.BackColor = Color.Transparent;
+        }
+
+        private void pnl3_Paint(object sender, PaintEventArgs e)
+        {
+            pnl3.BackColor = Color.Transparent;
+        }
+
+        private void pnl4_Paint(object sender, PaintEventArgs e)
+        {
+            pnl4.BackColor = Color.Transparent;
+        }
+
+        private void pnl5_Paint(object sender, PaintEventArgs e)
+        {
+            pnl5.BackColor = Color.Transparent;
+        }
+
+        private void pnl6_Paint(object sender, PaintEventArgs e)
+        {
+            pnl6.BackColor = Color.Transparent;
+        }
+
+        private void pnl7_Paint(object sender, PaintEventArgs e)
+        {
+            pnl7.BackColor = Color.Transparent;
+        }
+
+        private void pnl8_Paint(object sender, PaintEventArgs e)
+        {
+            pnl8.BackColor = Color.Transparent;
+        }
+
+        private void pnl9_Paint(object sender, PaintEventArgs e)
+        {
+            pnl9.BackColor = Color.Transparent;
+        }
     }
 }
