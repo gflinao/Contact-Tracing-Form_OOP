@@ -65,5 +65,30 @@ namespace Contact_Tracing_Form_OOP
         {
 
         }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
