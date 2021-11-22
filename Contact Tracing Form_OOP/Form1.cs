@@ -100,5 +100,10 @@ namespace Contact_Tracing_Form_OOP
         {
 
         }
+
+        private void pnl1_Paint(object sender, PaintEventArgs e)
+        {
+            pnl1.BackColor = Color.Transparent;
+        }
     }
 }

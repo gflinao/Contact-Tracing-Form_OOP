@@ -55,24 +55,24 @@ namespace Contact_Tracing_Form_OOP
             this.button1 = new System.Windows.Forms.Button();
             this.lblq1 = new System.Windows.Forms.Label();
             this.rbyes1 = new System.Windows.Forms.RadioButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnl7 = new System.Windows.Forms.Panel();
+            this.pnl8 = new System.Windows.Forms.Panel();
+            this.pnl9 = new System.Windows.Forms.Panel();
+            this.pnl6 = new System.Windows.Forms.Panel();
             this.pnl1 = new System.Windows.Forms.Panel();
             this.pnl2 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.pnl3 = new System.Windows.Forms.Panel();
+            this.pnl4 = new System.Windows.Forms.Panel();
+            this.pnl5 = new System.Windows.Forms.Panel();
+            this.pnl7.SuspendLayout();
+            this.pnl8.SuspendLayout();
+            this.pnl9.SuspendLayout();
+            this.pnl6.SuspendLayout();
             this.pnl1.SuspendLayout();
             this.pnl2.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
+            this.pnl3.SuspendLayout();
+            this.pnl4.SuspendLayout();
+            this.pnl5.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTrace
@@ -372,49 +372,49 @@ namespace Contact_Tracing_Form_OOP
             this.rbyes1.Text = "Yes";
             this.rbyes1.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // pnl7
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Control;
-            this.panel1.Controls.Add(this.rbno1);
-            this.panel1.Controls.Add(this.rbyes1);
-            this.panel1.Controls.Add(this.lblq1);
-            this.panel1.Location = new System.Drawing.Point(326, 121);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(402, 92);
-            this.panel1.TabIndex = 38;
+            this.pnl7.BackColor = System.Drawing.SystemColors.Control;
+            this.pnl7.Controls.Add(this.rbno1);
+            this.pnl7.Controls.Add(this.rbyes1);
+            this.pnl7.Controls.Add(this.lblq1);
+            this.pnl7.Location = new System.Drawing.Point(326, 121);
+            this.pnl7.Name = "pnl7";
+            this.pnl7.Size = new System.Drawing.Size(402, 92);
+            this.pnl7.TabIndex = 38;
             // 
-            // panel2
+            // pnl8
             // 
-            this.panel2.Controls.Add(this.radioButton7);
-            this.panel2.Controls.Add(this.radioButton6);
-            this.panel2.Controls.Add(this.lblq2);
-            this.panel2.Location = new System.Drawing.Point(326, 207);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(402, 107);
-            this.panel2.TabIndex = 39;
+            this.pnl8.Controls.Add(this.radioButton7);
+            this.pnl8.Controls.Add(this.radioButton6);
+            this.pnl8.Controls.Add(this.lblq2);
+            this.pnl8.Location = new System.Drawing.Point(326, 207);
+            this.pnl8.Name = "pnl8";
+            this.pnl8.Size = new System.Drawing.Size(402, 107);
+            this.pnl8.TabIndex = 39;
             // 
-            // panel3
+            // pnl9
             // 
-            this.panel3.Controls.Add(this.radioButton11);
-            this.panel3.Controls.Add(this.radioButton10);
-            this.panel3.Controls.Add(this.radioButton9);
-            this.panel3.Controls.Add(this.radioButton8);
-            this.panel3.Controls.Add(this.lblq3);
-            this.panel3.Location = new System.Drawing.Point(326, 311);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(402, 116);
-            this.panel3.TabIndex = 40;
+            this.pnl9.Controls.Add(this.radioButton11);
+            this.pnl9.Controls.Add(this.radioButton10);
+            this.pnl9.Controls.Add(this.radioButton9);
+            this.pnl9.Controls.Add(this.radioButton8);
+            this.pnl9.Controls.Add(this.lblq3);
+            this.pnl9.Location = new System.Drawing.Point(326, 311);
+            this.pnl9.Name = "pnl9";
+            this.pnl9.Size = new System.Drawing.Size(402, 116);
+            this.pnl9.TabIndex = 40;
             // 
-            // panel4
+            // pnl6
             // 
-            this.panel4.Controls.Add(this.lblgndr);
-            this.panel4.Controls.Add(this.rbnotsay);
-            this.panel4.Controls.Add(this.rbfemale);
-            this.panel4.Controls.Add(this.rbMale);
-            this.panel4.Location = new System.Drawing.Point(12, 281);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(203, 104);
-            this.panel4.TabIndex = 41;
+            this.pnl6.Controls.Add(this.lblgndr);
+            this.pnl6.Controls.Add(this.rbnotsay);
+            this.pnl6.Controls.Add(this.rbfemale);
+            this.pnl6.Controls.Add(this.rbMale);
+            this.pnl6.Location = new System.Drawing.Point(12, 281);
+            this.pnl6.Name = "pnl6";
+            this.pnl6.Size = new System.Drawing.Size(203, 104);
+            this.pnl6.TabIndex = 41;
             // 
             // pnl1
             // 
@@ -424,6 +424,7 @@ namespace Contact_Tracing_Form_OOP
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(224, 97);
             this.pnl1.TabIndex = 42;
+            this.pnl1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl1_Paint);
             // 
             // pnl2
             // 
@@ -434,32 +435,32 @@ namespace Contact_Tracing_Form_OOP
             this.pnl2.Size = new System.Drawing.Size(299, 55);
             this.pnl2.TabIndex = 43;
             // 
-            // panel7
+            // pnl3
             // 
-            this.panel7.Controls.Add(this.textBox2);
-            this.panel7.Controls.Add(this.lblage);
-            this.panel7.Location = new System.Drawing.Point(12, 162);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(69, 55);
-            this.panel7.TabIndex = 44;
+            this.pnl3.Controls.Add(this.textBox2);
+            this.pnl3.Controls.Add(this.lblage);
+            this.pnl3.Location = new System.Drawing.Point(12, 162);
+            this.pnl3.Name = "pnl3";
+            this.pnl3.Size = new System.Drawing.Size(69, 55);
+            this.pnl3.TabIndex = 44;
             // 
-            // panel8
+            // pnl4
             // 
-            this.panel8.Controls.Add(this.textBox3);
-            this.panel8.Controls.Add(this.lblphnum);
-            this.panel8.Location = new System.Drawing.Point(86, 162);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(222, 57);
-            this.panel8.TabIndex = 45;
+            this.pnl4.Controls.Add(this.textBox3);
+            this.pnl4.Controls.Add(this.lblphnum);
+            this.pnl4.Location = new System.Drawing.Point(86, 162);
+            this.pnl4.Name = "pnl4";
+            this.pnl4.Size = new System.Drawing.Size(222, 57);
+            this.pnl4.TabIndex = 45;
             // 
-            // panel9
+            // pnl5
             // 
-            this.panel9.Controls.Add(this.textBox4);
-            this.panel9.Controls.Add(this.lbladdr);
-            this.panel9.Location = new System.Drawing.Point(12, 216);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(297, 60);
-            this.panel9.TabIndex = 46;
+            this.pnl5.Controls.Add(this.textBox4);
+            this.pnl5.Controls.Add(this.lbladdr);
+            this.pnl5.Location = new System.Drawing.Point(12, 216);
+            this.pnl5.Name = "pnl5";
+            this.pnl5.Size = new System.Drawing.Size(297, 60);
+            this.pnl5.TabIndex = 46;
             // 
             // Form1
             // 
@@ -468,37 +469,37 @@ namespace Contact_Tracing_Form_OOP
             this.BackgroundImage = global::Contact_Tracing_Form_OOP.Properties.Resources.IMG_1466;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(767, 460);
-            this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.pnl5);
+            this.Controls.Add(this.pnl4);
+            this.Controls.Add(this.pnl3);
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnl1);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnl6);
+            this.Controls.Add(this.pnl9);
+            this.Controls.Add(this.pnl8);
+            this.Controls.Add(this.pnl7);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.pnl7.ResumeLayout(false);
+            this.pnl7.PerformLayout();
+            this.pnl8.ResumeLayout(false);
+            this.pnl8.PerformLayout();
+            this.pnl9.ResumeLayout(false);
+            this.pnl9.PerformLayout();
+            this.pnl6.ResumeLayout(false);
+            this.pnl6.PerformLayout();
             this.pnl1.ResumeLayout(false);
             this.pnl1.PerformLayout();
             this.pnl2.ResumeLayout(false);
             this.pnl2.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
+            this.pnl3.ResumeLayout(false);
+            this.pnl3.PerformLayout();
+            this.pnl4.ResumeLayout(false);
+            this.pnl4.PerformLayout();
+            this.pnl5.ResumeLayout(false);
+            this.pnl5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -530,15 +531,15 @@ namespace Contact_Tracing_Form_OOP
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblq1;
         private System.Windows.Forms.RadioButton rbyes1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pnl7;
+        private System.Windows.Forms.Panel pnl8;
+        private System.Windows.Forms.Panel pnl9;
+        private System.Windows.Forms.Panel pnl6;
         private System.Windows.Forms.Panel pnl1;
         private System.Windows.Forms.Panel pnl2;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel pnl3;
+        private System.Windows.Forms.Panel pnl4;
+        private System.Windows.Forms.Panel pnl5;
     }
 }
 
