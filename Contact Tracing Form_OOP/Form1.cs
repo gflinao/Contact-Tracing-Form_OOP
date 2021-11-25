@@ -162,7 +162,7 @@ namespace Contact_Tracing_Form_OOP
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            StreamWriter sw = new StreamWriter(@"ct.txt");
+            StreamWriter sw = new StreamWriter(Application.StartupPath + "\\Data\\" + "ct.txt");
             sw.WriteLine("Name:" + tbFN);
             sw.WriteLine("Age:" + tbAge);
             sw.WriteLine("Phone Number:" + tbPN);
@@ -173,6 +173,25 @@ namespace Contact_Tracing_Form_OOP
             sw.WriteLine("Do you currently have any of the following conditions during this time ?: " + lbl_q3);
 
             sw.Close();
+            MessageBox.Show("Information have been submitted.", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+            tbFN.Text = "";
+            tbAge.Text = "";
+            tbPN.Text = "";
+            tbAddr.Text = "";
+            rbMale.Checked = false;
+            rbfemale.Checked = false;
+            rbnotsay.Checked = false;
+            rbyes1.Checked = false;
+            rbyes2.Checked = false;
+            rbno1.Checked = false;
+            rbno2.Checked = false;
+            rbfvr.Checked = false;
+            rbcgh.Checked = false;
+            rbdob.Checked = false;
+            rbnon.Checked = false;
+
         }
 
         private void rbyes1_CheckedChanged(object sender, EventArgs e)
