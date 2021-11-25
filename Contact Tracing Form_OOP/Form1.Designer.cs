@@ -77,6 +77,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // lblTrace
             // 
+            this.lblTrace.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTrace.AutoSize = true;
             this.lblTrace.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTrace.ForeColor = System.Drawing.Color.LimeGreen;
@@ -89,6 +90,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // rbMale
             // 
+            this.rbMale.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbMale.AutoSize = true;
             this.rbMale.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbMale.Location = new System.Drawing.Point(10, 27);
@@ -102,6 +104,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // rbfemale
             // 
+            this.rbfemale.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbfemale.AutoSize = true;
             this.rbfemale.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbfemale.Location = new System.Drawing.Point(10, 53);
@@ -115,6 +118,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // rbnotsay
             // 
+            this.rbnotsay.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbnotsay.AutoSize = true;
             this.rbnotsay.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbnotsay.Location = new System.Drawing.Point(10, 79);
@@ -128,6 +132,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // lblfulname
             // 
+            this.lblfulname.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblfulname.AutoSize = true;
             this.lblfulname.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblfulname.Location = new System.Drawing.Point(6, 0);
@@ -139,6 +144,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // lblCTF
             // 
+            this.lblCTF.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCTF.AutoSize = true;
             this.lblCTF.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCTF.ForeColor = System.Drawing.Color.Black;
@@ -151,6 +157,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // tbFN
             // 
+            this.tbFN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbFN.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbFN.Location = new System.Drawing.Point(7, 26);
             this.tbFN.Margin = new System.Windows.Forms.Padding(7);
@@ -163,6 +170,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // lblage
             // 
+            this.lblage.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblage.AutoSize = true;
             this.lblage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblage.Location = new System.Drawing.Point(6, 0);
@@ -174,6 +182,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // lblphnum
             // 
+            this.lblphnum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblphnum.AutoSize = true;
             this.lblphnum.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblphnum.Location = new System.Drawing.Point(0, 0);
@@ -184,6 +193,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // lbladdr
             // 
+            this.lbladdr.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbladdr.AutoSize = true;
             this.lbladdr.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbladdr.Location = new System.Drawing.Point(6, 4);
@@ -194,6 +204,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // lblgndr
             // 
+            this.lblgndr.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblgndr.AutoSize = true;
             this.lblgndr.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblgndr.Location = new System.Drawing.Point(3, 0);
@@ -205,6 +216,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // tbAge
             // 
+            this.tbAge.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbAge.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbAge.Location = new System.Drawing.Point(10, 26);
             this.tbAge.Margin = new System.Windows.Forms.Padding(7);
@@ -217,6 +229,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // tbPN
             // 
+            this.tbPN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbPN.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPN.Location = new System.Drawing.Point(4, 26);
             this.tbPN.Margin = new System.Windows.Forms.Padding(7);
@@ -228,6 +241,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // tbAddr
             // 
+            this.tbAddr.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbAddr.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbAddr.Location = new System.Drawing.Point(7, 30);
             this.tbAddr.Margin = new System.Windows.Forms.Padding(7);
@@ -239,6 +253,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // rbno1
             // 
+            this.rbno1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbno1.AutoSize = true;
             this.rbno1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbno1.Location = new System.Drawing.Point(14, 59);
@@ -252,6 +267,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // lblq2
             // 
+            this.lblq2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblq2.AutoSize = true;
             this.lblq2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblq2.Location = new System.Drawing.Point(10, 13);
@@ -263,6 +279,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // rbno2
             // 
+            this.rbno2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbno2.AutoSize = true;
             this.rbno2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbno2.Location = new System.Drawing.Point(14, 77);
@@ -276,6 +293,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // rbyes2
             // 
+            this.rbyes2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbyes2.AutoSize = true;
             this.rbyes2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbyes2.Location = new System.Drawing.Point(14, 54);
@@ -289,6 +307,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // lblq3
             // 
+            this.lblq3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblq3.AutoSize = true;
             this.lblq3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblq3.Location = new System.Drawing.Point(10, 12);
@@ -300,6 +319,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // rbfvr
             // 
+            this.rbfvr.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbfvr.AutoSize = true;
             this.rbfvr.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbfvr.Location = new System.Drawing.Point(14, 53);
@@ -313,6 +333,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // rbcgh
             // 
+            this.rbcgh.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbcgh.AutoSize = true;
             this.rbcgh.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbcgh.Location = new System.Drawing.Point(14, 80);
@@ -326,6 +347,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // rbdob
             // 
+            this.rbdob.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbdob.AutoSize = true;
             this.rbdob.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbdob.Location = new System.Drawing.Point(120, 53);
@@ -339,6 +361,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // rbnon
             // 
+            this.rbnon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbnon.AutoSize = true;
             this.rbnon.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbnon.Location = new System.Drawing.Point(120, 80);
@@ -352,6 +375,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // btnSubmit
             // 
+            this.btnSubmit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnSubmit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
@@ -365,6 +389,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // lblq1
             // 
+            this.lblq1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblq1.AutoSize = true;
             this.lblq1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblq1.Location = new System.Drawing.Point(10, 10);
@@ -376,6 +401,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // rbyes1
             // 
+            this.rbyes1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbyes1.AutoSize = true;
             this.rbyes1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbyes1.Location = new System.Drawing.Point(14, 32);
@@ -389,6 +415,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // pnl7
             // 
+            this.pnl7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnl7.BackColor = System.Drawing.SystemColors.Control;
             this.pnl7.Controls.Add(this.rbno1);
             this.pnl7.Controls.Add(this.rbyes1);
@@ -401,6 +428,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // pnl8
             // 
+            this.pnl8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnl8.Controls.Add(this.rbyes2);
             this.pnl8.Controls.Add(this.rbno2);
             this.pnl8.Controls.Add(this.lblq2);
@@ -412,6 +440,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // pnl9
             // 
+            this.pnl9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnl9.Controls.Add(this.rbnon);
             this.pnl9.Controls.Add(this.rbdob);
             this.pnl9.Controls.Add(this.rbcgh);
@@ -425,6 +454,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // pnl6
             // 
+            this.pnl6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnl6.Controls.Add(this.lblgndr);
             this.pnl6.Controls.Add(this.rbnotsay);
             this.pnl6.Controls.Add(this.rbfemale);
@@ -437,6 +467,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // pnl1
             // 
+            this.pnl1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnl1.Controls.Add(this.lblCTF);
             this.pnl1.Controls.Add(this.lblTrace);
             this.pnl1.Location = new System.Drawing.Point(12, 4);
@@ -447,6 +478,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // pnl2
             // 
+            this.pnl2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnl2.Controls.Add(this.tbFN);
             this.pnl2.Controls.Add(this.lblfulname);
             this.pnl2.Location = new System.Drawing.Point(12, 104);
@@ -457,6 +489,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // pnl3
             // 
+            this.pnl3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnl3.Controls.Add(this.tbAge);
             this.pnl3.Controls.Add(this.lblage);
             this.pnl3.Location = new System.Drawing.Point(12, 162);
@@ -467,6 +500,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // pnl4
             // 
+            this.pnl4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnl4.Controls.Add(this.tbPN);
             this.pnl4.Controls.Add(this.lblphnum);
             this.pnl4.Location = new System.Drawing.Point(86, 162);
@@ -477,6 +511,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // pnl5
             // 
+            this.pnl5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnl5.Controls.Add(this.tbAddr);
             this.pnl5.Controls.Add(this.lbladdr);
             this.pnl5.Location = new System.Drawing.Point(12, 216);
