@@ -11,11 +11,11 @@ using System.IO;
 
 namespace Contact_Tracing_Form_OOP
 {
-    public partial class Form1 : Form
+    public partial class Trace : Form
     {
 
 
-        public Form1()
+        public Trace()
         {
             InitializeComponent();
         }

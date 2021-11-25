@@ -1,7 +1,7 @@
 ﻿
 namespace Contact_Tracing_Form_OOP
 {
-    partial class Form1
+    partial class Trace
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Contact_Tracing_Form_OOP
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Trace));
             this.lblTrace = new System.Windows.Forms.Label();
             this.rbMale = new System.Windows.Forms.RadioButton();
             this.rbfemale = new System.Windows.Forms.RadioButton();
@@ -536,7 +536,7 @@ namespace Contact_Tracing_Form_OOP
             this.lblhstag.Text = "#StayHomeSaveLives\r\n#WearMask #StaySafe";
             this.lblhstag.Click += new System.EventHandler(this.label1_Click_1);
             // 
-            // Form1
+            // Trace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -555,8 +555,8 @@ namespace Contact_Tracing_Form_OOP
             this.Controls.Add(this.pnl7);
             this.Controls.Add(this.btnSubmit);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Trace";
+            this.Text = "Trace : Contact Tracing Form";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.pnl7.ResumeLayout(false);
             this.pnl7.PerformLayout();
