@@ -7,15 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Contact_Tracing_Form_OOP
 {
     public partial class Form1 : Form
     {
+
+
         public Form1()
         {
             InitializeComponent();
         }
+
+        string gender;
+        string lbl_q;
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -53,7 +59,7 @@ namespace Contact_Tracing_Form_OOP
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void label3_Click_1(object sender, EventArgs e)
@@ -68,12 +74,18 @@ namespace Contact_Tracing_Form_OOP
 
         private void radioButton7_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (rbyes2.Checked == true)
+            {
+                lbl_q = "yes";
+            }
         }
 
         private void radioButton6_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (rbyes2.Checked == true)
+            {
+                lbl_q = "no";
+            }
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -144,6 +156,83 @@ namespace Contact_Tracing_Form_OOP
         private void pnl9_Paint(object sender, PaintEventArgs e)
         {
             pnl9.BackColor = Color.Transparent;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbyes1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbyes1.Checked == true)
+            {
+                lbl_q = "yes";
+            }
+        }
+
+        private void rbMale_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbMale.Checked == true)
+            {
+                gender = "Male";
+            }
+        }
+
+        private void rbfemale_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbfemale.Checked == true)
+            {
+                gender = "Female";
+            }
+        }
+
+        private void rbnotsay_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbnotsay.Checked == true)
+            {
+                gender = "I prefer not to say";
+            }
+        }
+
+        private void rbno1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbyes1.Checked == true)
+            {
+                lbl_q = "no";
+            }
+        }
+
+        private void rbfvr_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbfvr.Checked == true)
+            {
+                lbl_q = "fever";
+            }
+        }
+
+        private void rbcgh_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbcgh.Checked == true)
+            {
+                lbl_q = "cough";
+            }
+        }
+
+        private void rbdob_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbdob.Checked == true)
+            {
+                lbl_q = "difficulty of breathing";
+            }
+        }
+
+        private void rbnon_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbnon.Checked == true)
+            {
+                lbl_q = "none";
+            }
         }
     }
 }

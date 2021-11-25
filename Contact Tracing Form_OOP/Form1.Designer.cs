@@ -35,24 +35,24 @@ namespace Contact_Tracing_Form_OOP
             this.rbnotsay = new System.Windows.Forms.RadioButton();
             this.lblfulname = new System.Windows.Forms.Label();
             this.lblCTF = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbFN = new System.Windows.Forms.TextBox();
             this.lblage = new System.Windows.Forms.Label();
             this.lblphnum = new System.Windows.Forms.Label();
             this.lbladdr = new System.Windows.Forms.Label();
             this.lblgndr = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbAge = new System.Windows.Forms.TextBox();
+            this.tbPN = new System.Windows.Forms.TextBox();
+            this.tbAddr = new System.Windows.Forms.TextBox();
             this.rbno1 = new System.Windows.Forms.RadioButton();
             this.lblq2 = new System.Windows.Forms.Label();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.rbno2 = new System.Windows.Forms.RadioButton();
+            this.rbyes2 = new System.Windows.Forms.RadioButton();
             this.lblq3 = new System.Windows.Forms.Label();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.rbfvr = new System.Windows.Forms.RadioButton();
+            this.rbcgh = new System.Windows.Forms.RadioButton();
+            this.rbdob = new System.Windows.Forms.RadioButton();
+            this.rbnon = new System.Windows.Forms.RadioButton();
+            this.btnSubmit = new System.Windows.Forms.Button();
             this.lblq1 = new System.Windows.Forms.Label();
             this.rbyes1 = new System.Windows.Forms.RadioButton();
             this.pnl7 = new System.Windows.Forms.Panel();
@@ -98,6 +98,7 @@ namespace Contact_Tracing_Form_OOP
             this.rbMale.TabStop = true;
             this.rbMale.Text = "Male";
             this.rbMale.UseVisualStyleBackColor = true;
+            this.rbMale.CheckedChanged += new System.EventHandler(this.rbMale_CheckedChanged);
             // 
             // rbfemale
             // 
@@ -110,6 +111,7 @@ namespace Contact_Tracing_Form_OOP
             this.rbfemale.TabStop = true;
             this.rbfemale.Text = "Female";
             this.rbfemale.UseVisualStyleBackColor = true;
+            this.rbfemale.CheckedChanged += new System.EventHandler(this.rbfemale_CheckedChanged);
             // 
             // rbnotsay
             // 
@@ -122,6 +124,7 @@ namespace Contact_Tracing_Form_OOP
             this.rbnotsay.TabStop = true;
             this.rbnotsay.Text = "I prefer not to say";
             this.rbnotsay.UseVisualStyleBackColor = true;
+            this.rbnotsay.CheckedChanged += new System.EventHandler(this.rbnotsay_CheckedChanged);
             // 
             // lblfulname
             // 
@@ -146,16 +149,16 @@ namespace Contact_Tracing_Form_OOP
             this.lblCTF.Text = "Contact Tracing Form";
             this.lblCTF.Click += new System.EventHandler(this.label7_Click);
             // 
-            // textBox1
+            // tbFN
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(7, 26);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(7);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(285, 25);
-            this.textBox1.TabIndex = 12;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            this.tbFN.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbFN.Location = new System.Drawing.Point(7, 26);
+            this.tbFN.Margin = new System.Windows.Forms.Padding(7);
+            this.tbFN.Multiline = true;
+            this.tbFN.Name = "tbFN";
+            this.tbFN.Size = new System.Drawing.Size(285, 25);
+            this.tbFN.TabIndex = 12;
+            this.tbFN.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // lblage
             // 
@@ -199,35 +202,35 @@ namespace Contact_Tracing_Form_OOP
             this.lblgndr.Text = "Gender:";
             this.lblgndr.Click += new System.EventHandler(this.label6_Click_1);
             // 
-            // textBox2
+            // tbAge
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(10, 26);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(7);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(54, 25);
-            this.textBox2.TabIndex = 23;
+            this.tbAge.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAge.Location = new System.Drawing.Point(10, 26);
+            this.tbAge.Margin = new System.Windows.Forms.Padding(7);
+            this.tbAge.Multiline = true;
+            this.tbAge.Name = "tbAge";
+            this.tbAge.Size = new System.Drawing.Size(54, 25);
+            this.tbAge.TabIndex = 23;
             // 
-            // textBox3
+            // tbPN
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(4, 26);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(7);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(214, 25);
-            this.textBox3.TabIndex = 24;
+            this.tbPN.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPN.Location = new System.Drawing.Point(4, 26);
+            this.tbPN.Margin = new System.Windows.Forms.Padding(7);
+            this.tbPN.Multiline = true;
+            this.tbPN.Name = "tbPN";
+            this.tbPN.Size = new System.Drawing.Size(214, 25);
+            this.tbPN.TabIndex = 24;
             // 
-            // textBox4
+            // tbAddr
             // 
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(7, 30);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(7);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(285, 25);
-            this.textBox4.TabIndex = 25;
+            this.tbAddr.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAddr.Location = new System.Drawing.Point(7, 30);
+            this.tbAddr.Margin = new System.Windows.Forms.Padding(7);
+            this.tbAddr.Multiline = true;
+            this.tbAddr.Name = "tbAddr";
+            this.tbAddr.Size = new System.Drawing.Size(285, 25);
+            this.tbAddr.TabIndex = 25;
             // 
             // rbno1
             // 
@@ -240,6 +243,7 @@ namespace Contact_Tracing_Form_OOP
             this.rbno1.TabStop = true;
             this.rbno1.Text = "No";
             this.rbno1.UseVisualStyleBackColor = true;
+            this.rbno1.CheckedChanged += new System.EventHandler(this.rbno1_CheckedChanged);
             // 
             // lblq2
             // 
@@ -252,31 +256,31 @@ namespace Contact_Tracing_Form_OOP
             this.lblq2.Text = "Have you come into close contact with anyone \r\nwho has Covid-19?";
             this.lblq2.Click += new System.EventHandler(this.label9_Click);
             // 
-            // radioButton6
+            // rbno2
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(14, 77);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(45, 21);
-            this.radioButton6.TabIndex = 30;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "No";
-            this.radioButton6.UseVisualStyleBackColor = true;
-            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
+            this.rbno2.AutoSize = true;
+            this.rbno2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbno2.Location = new System.Drawing.Point(14, 77);
+            this.rbno2.Name = "rbno2";
+            this.rbno2.Size = new System.Drawing.Size(45, 21);
+            this.rbno2.TabIndex = 30;
+            this.rbno2.TabStop = true;
+            this.rbno2.Text = "No";
+            this.rbno2.UseVisualStyleBackColor = true;
+            this.rbno2.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
             // 
-            // radioButton7
+            // rbyes2
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(14, 54);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(46, 21);
-            this.radioButton7.TabIndex = 31;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Yes";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
+            this.rbyes2.AutoSize = true;
+            this.rbyes2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbyes2.Location = new System.Drawing.Point(14, 54);
+            this.rbyes2.Name = "rbyes2";
+            this.rbyes2.Size = new System.Drawing.Size(46, 21);
+            this.rbyes2.TabIndex = 31;
+            this.rbyes2.TabStop = true;
+            this.rbyes2.Text = "Yes";
+            this.rbyes2.UseVisualStyleBackColor = true;
+            this.rbyes2.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
             // 
             // lblq3
             // 
@@ -289,65 +293,70 @@ namespace Contact_Tracing_Form_OOP
             this.lblq3.Text = "Do you currently have any of the following\r\nconditions during this time?";
             this.lblq3.Click += new System.EventHandler(this.label10_Click);
             // 
-            // radioButton8
+            // rbfvr
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(14, 53);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(60, 21);
-            this.radioButton8.TabIndex = 33;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Fever";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.rbfvr.AutoSize = true;
+            this.rbfvr.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbfvr.Location = new System.Drawing.Point(14, 53);
+            this.rbfvr.Name = "rbfvr";
+            this.rbfvr.Size = new System.Drawing.Size(60, 21);
+            this.rbfvr.TabIndex = 33;
+            this.rbfvr.TabStop = true;
+            this.rbfvr.Text = "Fever";
+            this.rbfvr.UseVisualStyleBackColor = true;
+            this.rbfvr.CheckedChanged += new System.EventHandler(this.rbfvr_CheckedChanged);
             // 
-            // radioButton9
+            // rbcgh
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton9.Location = new System.Drawing.Point(14, 80);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(71, 21);
-            this.radioButton9.TabIndex = 34;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "Cough";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.rbcgh.AutoSize = true;
+            this.rbcgh.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbcgh.Location = new System.Drawing.Point(14, 80);
+            this.rbcgh.Name = "rbcgh";
+            this.rbcgh.Size = new System.Drawing.Size(71, 21);
+            this.rbcgh.TabIndex = 34;
+            this.rbcgh.TabStop = true;
+            this.rbcgh.Text = "Cough";
+            this.rbcgh.UseVisualStyleBackColor = true;
+            this.rbcgh.CheckedChanged += new System.EventHandler(this.rbcgh_CheckedChanged);
             // 
-            // radioButton10
+            // rbdob
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton10.Location = new System.Drawing.Point(120, 53);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(162, 21);
-            this.radioButton10.TabIndex = 35;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "Difficulty of Breathing";
-            this.radioButton10.UseVisualStyleBackColor = true;
+            this.rbdob.AutoSize = true;
+            this.rbdob.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbdob.Location = new System.Drawing.Point(120, 53);
+            this.rbdob.Name = "rbdob";
+            this.rbdob.Size = new System.Drawing.Size(162, 21);
+            this.rbdob.TabIndex = 35;
+            this.rbdob.TabStop = true;
+            this.rbdob.Text = "Difficulty of Breathing";
+            this.rbdob.UseVisualStyleBackColor = true;
+            this.rbdob.CheckedChanged += new System.EventHandler(this.rbdob_CheckedChanged);
             // 
-            // radioButton11
+            // rbnon
             // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton11.Location = new System.Drawing.Point(120, 80);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(61, 21);
-            this.radioButton11.TabIndex = 36;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "None";
-            this.radioButton11.UseVisualStyleBackColor = true;
+            this.rbnon.AutoSize = true;
+            this.rbnon.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbnon.Location = new System.Drawing.Point(120, 80);
+            this.rbnon.Name = "rbnon";
+            this.rbnon.Size = new System.Drawing.Size(61, 21);
+            this.rbnon.TabIndex = 36;
+            this.rbnon.TabStop = true;
+            this.rbnon.Text = "None";
+            this.rbnon.UseVisualStyleBackColor = true;
+            this.rbnon.CheckedChanged += new System.EventHandler(this.rbnon_CheckedChanged);
             // 
-            // button1
+            // btnSubmit
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(19, 399);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 39);
-            this.button1.TabIndex = 37;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnSubmit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
+            this.btnSubmit.Location = new System.Drawing.Point(19, 399);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(106, 39);
+            this.btnSubmit.TabIndex = 37;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblq1
             // 
@@ -371,6 +380,7 @@ namespace Contact_Tracing_Form_OOP
             this.rbyes1.TabStop = true;
             this.rbyes1.Text = "Yes";
             this.rbyes1.UseVisualStyleBackColor = true;
+            this.rbyes1.CheckedChanged += new System.EventHandler(this.rbyes1_CheckedChanged);
             // 
             // pnl7
             // 
@@ -386,8 +396,8 @@ namespace Contact_Tracing_Form_OOP
             // 
             // pnl8
             // 
-            this.pnl8.Controls.Add(this.radioButton7);
-            this.pnl8.Controls.Add(this.radioButton6);
+            this.pnl8.Controls.Add(this.rbyes2);
+            this.pnl8.Controls.Add(this.rbno2);
             this.pnl8.Controls.Add(this.lblq2);
             this.pnl8.Location = new System.Drawing.Point(326, 207);
             this.pnl8.Name = "pnl8";
@@ -397,10 +407,10 @@ namespace Contact_Tracing_Form_OOP
             // 
             // pnl9
             // 
-            this.pnl9.Controls.Add(this.radioButton11);
-            this.pnl9.Controls.Add(this.radioButton10);
-            this.pnl9.Controls.Add(this.radioButton9);
-            this.pnl9.Controls.Add(this.radioButton8);
+            this.pnl9.Controls.Add(this.rbnon);
+            this.pnl9.Controls.Add(this.rbdob);
+            this.pnl9.Controls.Add(this.rbcgh);
+            this.pnl9.Controls.Add(this.rbfvr);
             this.pnl9.Controls.Add(this.lblq3);
             this.pnl9.Location = new System.Drawing.Point(326, 311);
             this.pnl9.Name = "pnl9";
@@ -432,7 +442,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // pnl2
             // 
-            this.pnl2.Controls.Add(this.textBox1);
+            this.pnl2.Controls.Add(this.tbFN);
             this.pnl2.Controls.Add(this.lblfulname);
             this.pnl2.Location = new System.Drawing.Point(12, 104);
             this.pnl2.Name = "pnl2";
@@ -442,7 +452,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // pnl3
             // 
-            this.pnl3.Controls.Add(this.textBox2);
+            this.pnl3.Controls.Add(this.tbAge);
             this.pnl3.Controls.Add(this.lblage);
             this.pnl3.Location = new System.Drawing.Point(12, 162);
             this.pnl3.Name = "pnl3";
@@ -452,7 +462,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // pnl4
             // 
-            this.pnl4.Controls.Add(this.textBox3);
+            this.pnl4.Controls.Add(this.tbPN);
             this.pnl4.Controls.Add(this.lblphnum);
             this.pnl4.Location = new System.Drawing.Point(86, 162);
             this.pnl4.Name = "pnl4";
@@ -462,7 +472,7 @@ namespace Contact_Tracing_Form_OOP
             // 
             // pnl5
             // 
-            this.pnl5.Controls.Add(this.textBox4);
+            this.pnl5.Controls.Add(this.tbAddr);
             this.pnl5.Controls.Add(this.lbladdr);
             this.pnl5.Location = new System.Drawing.Point(12, 216);
             this.pnl5.Name = "pnl5";
@@ -486,7 +496,7 @@ namespace Contact_Tracing_Form_OOP
             this.Controls.Add(this.pnl9);
             this.Controls.Add(this.pnl8);
             this.Controls.Add(this.pnl7);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSubmit);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -519,24 +529,24 @@ namespace Contact_Tracing_Form_OOP
         private System.Windows.Forms.RadioButton rbnotsay;
         private System.Windows.Forms.Label lblfulname;
         private System.Windows.Forms.Label lblCTF;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbFN;
         private System.Windows.Forms.Label lblage;
         private System.Windows.Forms.Label lblphnum;
         private System.Windows.Forms.Label lbladdr;
         private System.Windows.Forms.Label lblgndr;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbAge;
+        private System.Windows.Forms.TextBox tbPN;
+        private System.Windows.Forms.TextBox tbAddr;
         private System.Windows.Forms.RadioButton rbno1;
         private System.Windows.Forms.Label lblq2;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton rbno2;
+        private System.Windows.Forms.RadioButton rbyes2;
         private System.Windows.Forms.Label lblq3;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton rbfvr;
+        private System.Windows.Forms.RadioButton rbcgh;
+        private System.Windows.Forms.RadioButton rbdob;
+        private System.Windows.Forms.RadioButton rbnon;
+        private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Label lblq1;
         private System.Windows.Forms.RadioButton rbyes1;
         private System.Windows.Forms.Panel pnl7;
