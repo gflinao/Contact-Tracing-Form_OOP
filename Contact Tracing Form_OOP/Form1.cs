@@ -21,7 +21,9 @@ namespace Contact_Tracing_Form_OOP
         }
 
         string gender;
-        string lbl_q;
+        string lbl_q1;
+        string lbl_q2;
+        string lbl_q3;
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -76,7 +78,7 @@ namespace Contact_Tracing_Form_OOP
         {
             if (rbyes2.Checked == true)
             {
-                lbl_q = "yes";
+                lbl_q2 = "yes";
             }
         }
 
@@ -84,7 +86,7 @@ namespace Contact_Tracing_Form_OOP
         {
             if (rbyes2.Checked == true)
             {
-                lbl_q = "no";
+                lbl_q2 = "no";
             }
         }
 
@@ -158,16 +160,26 @@ namespace Contact_Tracing_Form_OOP
             pnl9.BackColor = Color.Transparent;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSubmit_Click(object sender, EventArgs e)
         {
+            StreamWriter sw = new StreamWriter(@"ct.txt");
+            sw.WriteLine("Name:" + tbFN);
+            sw.WriteLine("Age:" + tbAge);
+            sw.WriteLine("Phone Number:" + tbPN);
+            sw.WriteLine("Address:" + tbAddr);
+            sw.WriteLine("Gender:" + gender);
+            sw.WriteLine("Have you traveled arounf the country anytime?:" + lbl_q1);
+            sw.WriteLine("Have you come into close contact with anyone who has Covid - 19?:" + lbl_q2);
+            sw.WriteLine("Do you currently have any of the following conditions during this time ?: " + lbl_q3);
 
+            sw.Close();
         }
 
         private void rbyes1_CheckedChanged(object sender, EventArgs e)
         {
             if (rbyes1.Checked == true)
             {
-                lbl_q = "yes";
+                lbl_q1 = "yes";
             }
         }
 
@@ -199,7 +211,7 @@ namespace Contact_Tracing_Form_OOP
         {
             if (rbyes1.Checked == true)
             {
-                lbl_q = "no";
+                lbl_q1 = "no";
             }
         }
 
@@ -207,7 +219,7 @@ namespace Contact_Tracing_Form_OOP
         {
             if (rbfvr.Checked == true)
             {
-                lbl_q = "fever";
+                lbl_q3 = "fever";
             }
         }
 
@@ -215,7 +227,7 @@ namespace Contact_Tracing_Form_OOP
         {
             if (rbcgh.Checked == true)
             {
-                lbl_q = "cough";
+                lbl_q3 = "cough";
             }
         }
 
@@ -223,7 +235,7 @@ namespace Contact_Tracing_Form_OOP
         {
             if (rbdob.Checked == true)
             {
-                lbl_q = "difficulty of breathing";
+                lbl_q3 = "difficulty of breathing";
             }
         }
 
@@ -231,7 +243,38 @@ namespace Contact_Tracing_Form_OOP
         {
             if (rbnon.Checked == true)
             {
-                lbl_q = "none";
+                lbl_q3 = "none";
+            }
+        }
+
+        private void tbAge_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbFN_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void tbAddr_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbAge_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbPN_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
             }
         }
     }

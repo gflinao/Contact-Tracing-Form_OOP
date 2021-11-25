@@ -159,6 +159,7 @@ namespace Contact_Tracing_Form_OOP
             this.tbFN.Size = new System.Drawing.Size(285, 25);
             this.tbFN.TabIndex = 12;
             this.tbFN.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            this.tbFN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbFN_KeyPress);
             // 
             // lblage
             // 
@@ -211,6 +212,8 @@ namespace Contact_Tracing_Form_OOP
             this.tbAge.Name = "tbAge";
             this.tbAge.Size = new System.Drawing.Size(54, 25);
             this.tbAge.TabIndex = 23;
+            this.tbAge.TextChanged += new System.EventHandler(this.tbAge_TextChanged);
+            this.tbAge.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbAge_KeyPress);
             // 
             // tbPN
             // 
@@ -221,6 +224,7 @@ namespace Contact_Tracing_Form_OOP
             this.tbPN.Name = "tbPN";
             this.tbPN.Size = new System.Drawing.Size(214, 25);
             this.tbPN.TabIndex = 24;
+            this.tbPN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPN_KeyPress);
             // 
             // tbAddr
             // 
@@ -231,6 +235,7 @@ namespace Contact_Tracing_Form_OOP
             this.tbAddr.Name = "tbAddr";
             this.tbAddr.Size = new System.Drawing.Size(285, 25);
             this.tbAddr.TabIndex = 25;
+            this.tbAddr.TextChanged += new System.EventHandler(this.tbAddr_TextChanged);
             // 
             // rbno1
             // 
@@ -356,7 +361,7 @@ namespace Contact_Tracing_Form_OOP
             this.btnSubmit.TabIndex = 37;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
-            this.btnSubmit.Click += new System.EventHandler(this.button1_Click);
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // lblq1
             // 
