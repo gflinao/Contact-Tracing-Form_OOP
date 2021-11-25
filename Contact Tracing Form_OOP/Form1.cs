@@ -296,5 +296,10 @@ namespace Contact_Tracing_Form_OOP
                 e.Handled = true;
             }
         }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+            lblhstag.BackColor = Color.Transparent;
+        }
     }
 }

@@ -29,6 +29,7 @@ namespace Contact_Tracing_Form_OOP
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblTrace = new System.Windows.Forms.Label();
             this.rbMale = new System.Windows.Forms.RadioButton();
             this.rbfemale = new System.Windows.Forms.RadioButton();
@@ -64,6 +65,7 @@ namespace Contact_Tracing_Form_OOP
             this.pnl3 = new System.Windows.Forms.Panel();
             this.pnl4 = new System.Windows.Forms.Panel();
             this.pnl5 = new System.Windows.Forms.Panel();
+            this.lblhstag = new System.Windows.Forms.Label();
             this.pnl7.SuspendLayout();
             this.pnl8.SuspendLayout();
             this.pnl9.SuspendLayout();
@@ -256,7 +258,7 @@ namespace Contact_Tracing_Form_OOP
             this.rbno1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbno1.AutoSize = true;
             this.rbno1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbno1.Location = new System.Drawing.Point(14, 59);
+            this.rbno1.Location = new System.Drawing.Point(14, 67);
             this.rbno1.Name = "rbno1";
             this.rbno1.Size = new System.Drawing.Size(45, 21);
             this.rbno1.TabIndex = 28;
@@ -270,7 +272,7 @@ namespace Contact_Tracing_Form_OOP
             this.lblq2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblq2.AutoSize = true;
             this.lblq2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblq2.Location = new System.Drawing.Point(10, 13);
+            this.lblq2.Location = new System.Drawing.Point(13, 13);
             this.lblq2.Name = "lblq2";
             this.lblq2.Size = new System.Drawing.Size(375, 38);
             this.lblq2.TabIndex = 29;
@@ -282,7 +284,7 @@ namespace Contact_Tracing_Form_OOP
             this.rbno2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbno2.AutoSize = true;
             this.rbno2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbno2.Location = new System.Drawing.Point(14, 77);
+            this.rbno2.Location = new System.Drawing.Point(17, 83);
             this.rbno2.Name = "rbno2";
             this.rbno2.Size = new System.Drawing.Size(45, 21);
             this.rbno2.TabIndex = 30;
@@ -296,7 +298,7 @@ namespace Contact_Tracing_Form_OOP
             this.rbyes2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbyes2.AutoSize = true;
             this.rbyes2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbyes2.Location = new System.Drawing.Point(14, 54);
+            this.rbyes2.Location = new System.Drawing.Point(17, 56);
             this.rbyes2.Name = "rbyes2";
             this.rbyes2.Size = new System.Drawing.Size(46, 21);
             this.rbyes2.TabIndex = 31;
@@ -310,7 +312,7 @@ namespace Contact_Tracing_Form_OOP
             this.lblq3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblq3.AutoSize = true;
             this.lblq3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblq3.Location = new System.Drawing.Point(10, 12);
+            this.lblq3.Location = new System.Drawing.Point(13, 12);
             this.lblq3.Name = "lblq3";
             this.lblq3.Size = new System.Drawing.Size(332, 38);
             this.lblq3.TabIndex = 32;
@@ -322,7 +324,7 @@ namespace Contact_Tracing_Form_OOP
             this.rbfvr.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbfvr.AutoSize = true;
             this.rbfvr.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbfvr.Location = new System.Drawing.Point(14, 53);
+            this.rbfvr.Location = new System.Drawing.Point(17, 53);
             this.rbfvr.Name = "rbfvr";
             this.rbfvr.Size = new System.Drawing.Size(60, 21);
             this.rbfvr.TabIndex = 33;
@@ -336,7 +338,7 @@ namespace Contact_Tracing_Form_OOP
             this.rbcgh.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbcgh.AutoSize = true;
             this.rbcgh.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbcgh.Location = new System.Drawing.Point(14, 80);
+            this.rbcgh.Location = new System.Drawing.Point(17, 80);
             this.rbcgh.Name = "rbcgh";
             this.rbcgh.Size = new System.Drawing.Size(71, 21);
             this.rbcgh.TabIndex = 34;
@@ -392,7 +394,7 @@ namespace Contact_Tracing_Form_OOP
             this.lblq1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblq1.AutoSize = true;
             this.lblq1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblq1.Location = new System.Drawing.Point(10, 10);
+            this.lblq1.Location = new System.Drawing.Point(10, 18);
             this.lblq1.Name = "lblq1";
             this.lblq1.Size = new System.Drawing.Size(377, 19);
             this.lblq1.TabIndex = 26;
@@ -404,7 +406,7 @@ namespace Contact_Tracing_Form_OOP
             this.rbyes1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbyes1.AutoSize = true;
             this.rbyes1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbyes1.Location = new System.Drawing.Point(14, 32);
+            this.rbyes1.Location = new System.Drawing.Point(14, 40);
             this.rbyes1.Name = "rbyes1";
             this.rbyes1.Size = new System.Drawing.Size(46, 21);
             this.rbyes1.TabIndex = 27;
@@ -420,9 +422,9 @@ namespace Contact_Tracing_Form_OOP
             this.pnl7.Controls.Add(this.rbno1);
             this.pnl7.Controls.Add(this.rbyes1);
             this.pnl7.Controls.Add(this.lblq1);
-            this.pnl7.Location = new System.Drawing.Point(326, 121);
+            this.pnl7.Location = new System.Drawing.Point(326, 46);
             this.pnl7.Name = "pnl7";
-            this.pnl7.Size = new System.Drawing.Size(402, 92);
+            this.pnl7.Size = new System.Drawing.Size(402, 109);
             this.pnl7.TabIndex = 38;
             this.pnl7.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl7_Paint);
             // 
@@ -432,7 +434,7 @@ namespace Contact_Tracing_Form_OOP
             this.pnl8.Controls.Add(this.rbyes2);
             this.pnl8.Controls.Add(this.rbno2);
             this.pnl8.Controls.Add(this.lblq2);
-            this.pnl8.Location = new System.Drawing.Point(326, 207);
+            this.pnl8.Location = new System.Drawing.Point(323, 140);
             this.pnl8.Name = "pnl8";
             this.pnl8.Size = new System.Drawing.Size(402, 107);
             this.pnl8.TabIndex = 39;
@@ -446,7 +448,7 @@ namespace Contact_Tracing_Form_OOP
             this.pnl9.Controls.Add(this.rbcgh);
             this.pnl9.Controls.Add(this.rbfvr);
             this.pnl9.Controls.Add(this.lblq3);
-            this.pnl9.Location = new System.Drawing.Point(326, 311);
+            this.pnl9.Location = new System.Drawing.Point(323, 250);
             this.pnl9.Name = "pnl9";
             this.pnl9.Size = new System.Drawing.Size(402, 116);
             this.pnl9.TabIndex = 40;
@@ -520,23 +522,39 @@ namespace Contact_Tracing_Form_OOP
             this.pnl5.TabIndex = 46;
             this.pnl5.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl5_Paint);
             // 
+            // lblhstag
+            // 
+            this.lblhstag.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblhstag.AutoSize = true;
+            this.lblhstag.BackColor = System.Drawing.Color.Transparent;
+            this.lblhstag.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblhstag.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblhstag.Location = new System.Drawing.Point(323, 386);
+            this.lblhstag.Name = "lblhstag";
+            this.lblhstag.Size = new System.Drawing.Size(238, 50);
+            this.lblhstag.TabIndex = 47;
+            this.lblhstag.Text = "#StayHomeSaveLives\r\n#WearMask #StaySafe";
+            this.lblhstag.Click += new System.EventHandler(this.label1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Contact_Tracing_Form_OOP.Properties.Resources.IMG_1466;
+            this.BackgroundImage = global::Contact_Tracing_Form_OOP.Properties.Resources.IMG_1477;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(767, 460);
+            this.Controls.Add(this.lblhstag);
             this.Controls.Add(this.pnl5);
             this.Controls.Add(this.pnl4);
+            this.Controls.Add(this.pnl9);
+            this.Controls.Add(this.pnl8);
             this.Controls.Add(this.pnl3);
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.pnl6);
-            this.Controls.Add(this.pnl9);
-            this.Controls.Add(this.pnl8);
             this.Controls.Add(this.pnl7);
             this.Controls.Add(this.btnSubmit);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -559,6 +577,7 @@ namespace Contact_Tracing_Form_OOP
             this.pnl5.ResumeLayout(false);
             this.pnl5.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -598,6 +617,7 @@ namespace Contact_Tracing_Form_OOP
         private System.Windows.Forms.Panel pnl3;
         private System.Windows.Forms.Panel pnl4;
         private System.Windows.Forms.Panel pnl5;
+        private System.Windows.Forms.Label lblhstag;
     }
 }
 
