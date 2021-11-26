@@ -78,15 +78,15 @@ namespace Contact_Tracing_Form_OOP
         {
             if (rbyes2.Checked == true)
             {
-                lbl_q2 = "yes";
+                lbl_q2 = "Yes";
             }
         }
 
         private void radioButton6_CheckedChanged(object sender, EventArgs e)
         {
-            if (rbyes2.Checked == true)
+            if (rbno2.Checked == true)
             {
-                lbl_q2 = "no";
+                lbl_q2 = "No";
             }
         }
 
@@ -198,7 +198,7 @@ namespace Contact_Tracing_Form_OOP
         {
             if (rbyes1.Checked == true)
             {
-                lbl_q1 = "yes";
+                lbl_q1 = "Yes";
             }
         }
 
@@ -228,9 +228,9 @@ namespace Contact_Tracing_Form_OOP
 
         private void rbno1_CheckedChanged(object sender, EventArgs e)
         {
-            if (rbyes1.Checked == true)
+            if (rbno1.Checked == true)
             {
-                lbl_q1 = "no";
+                lbl_q1 = "No";
             }
         }
 
@@ -238,7 +238,7 @@ namespace Contact_Tracing_Form_OOP
         {
             if (rbfvr.Checked == true)
             {
-                lbl_q3 = "fever";
+                lbl_q3 = "Fever";
             }
         }
 
@@ -246,7 +246,7 @@ namespace Contact_Tracing_Form_OOP
         {
             if (rbcgh.Checked == true)
             {
-                lbl_q3 = "cough";
+                lbl_q3 = "Cough";
             }
         }
 
@@ -254,7 +254,7 @@ namespace Contact_Tracing_Form_OOP
         {
             if (rbdob.Checked == true)
             {
-                lbl_q3 = "difficulty of breathing";
+                lbl_q3 = "Difficulty of breathing";
             }
         }
 
@@ -262,7 +262,7 @@ namespace Contact_Tracing_Form_OOP
         {
             if (rbnon.Checked == true)
             {
-                lbl_q3 = "none";
+                lbl_q3 = "None";
             }
         }
 
