@@ -16,15 +16,16 @@ namespace Contact_Tracing_Form_OOP
 
         string[] arr = new string[4];
 
+        string gender;
+        string lbl_q1;
+        string lbl_q2;
+        string lbl_q3;
+
         public Trace()
         {
             InitializeComponent();
         }
 
-        string gender;
-        string lbl_q1;
-        string lbl_q2;
-        string lbl_q3;
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -163,7 +164,7 @@ namespace Contact_Tracing_Form_OOP
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            StreamWriter sw = new StreamWriter(@"ct.txt");
+            StreamWriter sw = new StreamWriter(Application.StartupPath + "\\CT_Data\\" + tbFN.Text + " " + ".txt");
             sw.WriteLine("Name:" + tbFN);
             sw.WriteLine("Age:" + tbAge);
             sw.WriteLine("Phone Number:" + tbPN);
@@ -171,7 +172,7 @@ namespace Contact_Tracing_Form_OOP
             sw.WriteLine("Gender:" + gender);
             sw.WriteLine("Have you traveled around the country anytime?:" + lbl_q1);
             sw.WriteLine("Have you come into close contact with anyone who has Covid - 19?:" + lbl_q2);
-            sw.WriteLine("Do you currently have any of the following conditions during this time ?: " + lbl_q3);
+            sw.WriteLine("Do you currently have any of the following conditions during this time?: " + lbl_q3);
 
             for (int i = 0; i < 3; i++)
             {
