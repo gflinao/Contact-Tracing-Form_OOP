@@ -14,6 +14,7 @@ namespace Contact_Tracing_Form_OOP
     public partial class Trace : Form
     {
 
+        string[] arr = new string[4];
 
         public Trace()
         {
@@ -172,6 +173,14 @@ namespace Contact_Tracing_Form_OOP
             sw.WriteLine("Have you come into close contact with anyone who has Covid - 19?:" + lbl_q2);
             sw.WriteLine("Do you currently have any of the following conditions during this time ?: " + lbl_q3);
 
+            for (int i = 0; i < 3; i++)
+            {
+                if (arr[i] != "")
+                {
+                    sw.WriteLine(arr[i]);
+                }
+            }
+
             sw.Close();
             MessageBox.Show("Information have been submitted.", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -187,10 +196,10 @@ namespace Contact_Tracing_Form_OOP
             rbyes2.Checked = false;
             rbno1.Checked = false;
             rbno2.Checked = false;
-            rbfvr.Checked = false;
-            rbcgh.Checked = false;
-            rbdob.Checked = false;
-            rbnon.Checked = false;
+            cbfvr.Checked = false;
+            cbcgh.Checked = false;
+            cbdob.Checked = false;
+            cbnon.Checked = false;
 
         }
 
@@ -234,37 +243,7 @@ namespace Contact_Tracing_Form_OOP
             }
         }
 
-        private void rbfvr_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rbfvr.Checked == true)
-            {
-                lbl_q3 = "Fever";
-            }
-        }
 
-        private void rbcgh_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rbcgh.Checked == true)
-            {
-                lbl_q3 = "Cough";
-            }
-        }
-
-        private void rbdob_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rbdob.Checked == true)
-            {
-                lbl_q3 = "Difficulty of breathing";
-            }
-        }
-
-        private void rbnon_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rbnon.Checked == true)
-            {
-                lbl_q3 = "None";
-            }
-        }
 
         private void tbAge_TextChanged(object sender, EventArgs e)
         {
@@ -300,6 +279,59 @@ namespace Contact_Tracing_Form_OOP
         private void label1_Click_1(object sender, EventArgs e)
         {
             lblhstag.BackColor = Color.Transparent;
+        }
+
+        private void cbfvr_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbfvr.Checked == true)
+            {
+                arr[0] = "Fever";
+            }
+
+            else
+            {
+                arr[0] = "";
+            }
+
+        }
+
+        private void cbcgh_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbcgh.Checked == true)
+            {
+                arr[1] = "Cough";
+            }
+
+            else
+            {
+                arr[1] = "";
+            }
+        }
+
+        private void cbdob_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbdob.Checked == true)
+            {
+                arr[2] = "Difficulty of Breathing";
+            }
+
+            else
+            {
+                arr[2] = "";
+            }
+        }
+
+        private void cbnon_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbnon.Checked == true)
+            {
+                arr[3] = "None";
+            }
+
+            else
+            {
+                arr[3] = "";
+            }
         }
     }
 }

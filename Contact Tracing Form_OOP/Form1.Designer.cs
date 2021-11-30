@@ -49,10 +49,6 @@ namespace Contact_Tracing_Form_OOP
             this.rbno2 = new System.Windows.Forms.RadioButton();
             this.rbyes2 = new System.Windows.Forms.RadioButton();
             this.lblq3 = new System.Windows.Forms.Label();
-            this.rbfvr = new System.Windows.Forms.RadioButton();
-            this.rbcgh = new System.Windows.Forms.RadioButton();
-            this.rbdob = new System.Windows.Forms.RadioButton();
-            this.rbnon = new System.Windows.Forms.RadioButton();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.lblq1 = new System.Windows.Forms.Label();
             this.rbyes1 = new System.Windows.Forms.RadioButton();
@@ -66,6 +62,10 @@ namespace Contact_Tracing_Form_OOP
             this.pnl4 = new System.Windows.Forms.Panel();
             this.pnl5 = new System.Windows.Forms.Panel();
             this.lblhstag = new System.Windows.Forms.Label();
+            this.cbfvr = new System.Windows.Forms.CheckBox();
+            this.cbcgh = new System.Windows.Forms.CheckBox();
+            this.cbdob = new System.Windows.Forms.CheckBox();
+            this.cbnon = new System.Windows.Forms.CheckBox();
             this.pnl7.SuspendLayout();
             this.pnl8.SuspendLayout();
             this.pnl9.SuspendLayout();
@@ -319,62 +319,6 @@ namespace Contact_Tracing_Form_OOP
             this.lblq3.Text = "Do you currently have any of the following\r\nconditions during this time?";
             this.lblq3.Click += new System.EventHandler(this.label10_Click);
             // 
-            // rbfvr
-            // 
-            this.rbfvr.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rbfvr.AutoSize = true;
-            this.rbfvr.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbfvr.Location = new System.Drawing.Point(17, 53);
-            this.rbfvr.Name = "rbfvr";
-            this.rbfvr.Size = new System.Drawing.Size(60, 21);
-            this.rbfvr.TabIndex = 33;
-            this.rbfvr.TabStop = true;
-            this.rbfvr.Text = "Fever";
-            this.rbfvr.UseVisualStyleBackColor = true;
-            this.rbfvr.CheckedChanged += new System.EventHandler(this.rbfvr_CheckedChanged);
-            // 
-            // rbcgh
-            // 
-            this.rbcgh.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rbcgh.AutoSize = true;
-            this.rbcgh.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbcgh.Location = new System.Drawing.Point(17, 80);
-            this.rbcgh.Name = "rbcgh";
-            this.rbcgh.Size = new System.Drawing.Size(71, 21);
-            this.rbcgh.TabIndex = 34;
-            this.rbcgh.TabStop = true;
-            this.rbcgh.Text = "Cough";
-            this.rbcgh.UseVisualStyleBackColor = true;
-            this.rbcgh.CheckedChanged += new System.EventHandler(this.rbcgh_CheckedChanged);
-            // 
-            // rbdob
-            // 
-            this.rbdob.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rbdob.AutoSize = true;
-            this.rbdob.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbdob.Location = new System.Drawing.Point(120, 53);
-            this.rbdob.Name = "rbdob";
-            this.rbdob.Size = new System.Drawing.Size(162, 21);
-            this.rbdob.TabIndex = 35;
-            this.rbdob.TabStop = true;
-            this.rbdob.Text = "Difficulty of Breathing";
-            this.rbdob.UseVisualStyleBackColor = true;
-            this.rbdob.CheckedChanged += new System.EventHandler(this.rbdob_CheckedChanged);
-            // 
-            // rbnon
-            // 
-            this.rbnon.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rbnon.AutoSize = true;
-            this.rbnon.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnon.Location = new System.Drawing.Point(120, 80);
-            this.rbnon.Name = "rbnon";
-            this.rbnon.Size = new System.Drawing.Size(61, 21);
-            this.rbnon.TabIndex = 36;
-            this.rbnon.TabStop = true;
-            this.rbnon.Text = "None";
-            this.rbnon.UseVisualStyleBackColor = true;
-            this.rbnon.CheckedChanged += new System.EventHandler(this.rbnon_CheckedChanged);
-            // 
             // btnSubmit
             // 
             this.btnSubmit.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -443,10 +387,10 @@ namespace Contact_Tracing_Form_OOP
             // pnl9
             // 
             this.pnl9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnl9.Controls.Add(this.rbnon);
-            this.pnl9.Controls.Add(this.rbdob);
-            this.pnl9.Controls.Add(this.rbcgh);
-            this.pnl9.Controls.Add(this.rbfvr);
+            this.pnl9.Controls.Add(this.cbnon);
+            this.pnl9.Controls.Add(this.cbdob);
+            this.pnl9.Controls.Add(this.cbcgh);
+            this.pnl9.Controls.Add(this.cbfvr);
             this.pnl9.Controls.Add(this.lblq3);
             this.pnl9.Location = new System.Drawing.Point(323, 250);
             this.pnl9.Name = "pnl9";
@@ -536,6 +480,54 @@ namespace Contact_Tracing_Form_OOP
             this.lblhstag.Text = "#StayHomeSaveLives\r\n#WearMask #StaySafe";
             this.lblhstag.Click += new System.EventHandler(this.label1_Click_1);
             // 
+            // cbfvr
+            // 
+            this.cbfvr.AutoSize = true;
+            this.cbfvr.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbfvr.Location = new System.Drawing.Point(17, 53);
+            this.cbfvr.Name = "cbfvr";
+            this.cbfvr.Size = new System.Drawing.Size(61, 21);
+            this.cbfvr.TabIndex = 48;
+            this.cbfvr.Text = "Fever";
+            this.cbfvr.UseVisualStyleBackColor = true;
+            this.cbfvr.CheckedChanged += new System.EventHandler(this.cbfvr_CheckedChanged);
+            // 
+            // cbcgh
+            // 
+            this.cbcgh.AutoSize = true;
+            this.cbcgh.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbcgh.Location = new System.Drawing.Point(17, 80);
+            this.cbcgh.Name = "cbcgh";
+            this.cbcgh.Size = new System.Drawing.Size(72, 21);
+            this.cbcgh.TabIndex = 49;
+            this.cbcgh.Text = "Cough";
+            this.cbcgh.UseVisualStyleBackColor = true;
+            this.cbcgh.CheckedChanged += new System.EventHandler(this.cbcgh_CheckedChanged);
+            // 
+            // cbdob
+            // 
+            this.cbdob.AutoSize = true;
+            this.cbdob.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbdob.Location = new System.Drawing.Point(147, 53);
+            this.cbdob.Name = "cbdob";
+            this.cbdob.Size = new System.Drawing.Size(163, 21);
+            this.cbdob.TabIndex = 50;
+            this.cbdob.Text = "Difficulty of Breathing";
+            this.cbdob.UseVisualStyleBackColor = true;
+            this.cbdob.CheckedChanged += new System.EventHandler(this.cbdob_CheckedChanged);
+            // 
+            // cbnon
+            // 
+            this.cbnon.AutoSize = true;
+            this.cbnon.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbnon.Location = new System.Drawing.Point(147, 80);
+            this.cbnon.Name = "cbnon";
+            this.cbnon.Size = new System.Drawing.Size(62, 21);
+            this.cbnon.TabIndex = 51;
+            this.cbnon.Text = "None";
+            this.cbnon.UseVisualStyleBackColor = true;
+            this.cbnon.CheckedChanged += new System.EventHandler(this.cbnon_CheckedChanged);
+            // 
             // Trace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -601,10 +593,6 @@ namespace Contact_Tracing_Form_OOP
         private System.Windows.Forms.RadioButton rbno2;
         private System.Windows.Forms.RadioButton rbyes2;
         private System.Windows.Forms.Label lblq3;
-        private System.Windows.Forms.RadioButton rbfvr;
-        private System.Windows.Forms.RadioButton rbcgh;
-        private System.Windows.Forms.RadioButton rbdob;
-        private System.Windows.Forms.RadioButton rbnon;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Label lblq1;
         private System.Windows.Forms.RadioButton rbyes1;
@@ -618,6 +606,10 @@ namespace Contact_Tracing_Form_OOP
         private System.Windows.Forms.Panel pnl4;
         private System.Windows.Forms.Panel pnl5;
         private System.Windows.Forms.Label lblhstag;
+        private System.Windows.Forms.CheckBox cbfvr;
+        private System.Windows.Forms.CheckBox cbnon;
+        private System.Windows.Forms.CheckBox cbdob;
+        private System.Windows.Forms.CheckBox cbcgh;
     }
 }
 
